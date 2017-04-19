@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <script src="build/js/vendor.min.js"></script>
+    <script type="text/javascript" src="build/js/app.js"></script>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <title>Food Cart World</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to Food Cart World</h1>
+      <form id="foodCart">
+        <label for="foodCartName">Enter Food Cart Name</label>
+        <input id="foodCartName" type="text" class=form-control>
+        <button type="submit" class="btn btn-success" id="button">Find Food Cart!</button>
+      </form>
+      <div id="map"></div>
+      <div id="result"></div>
+    </div>
+  </body>
+</html>
